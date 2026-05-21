@@ -272,4 +272,11 @@ main {
 #dekoninck-left,
 #dekoninck-right {
     top: 100vh;
+    left: 28.5vw;
+}
+
+#detijdloze-left,
+#detijdloze-right {
+    top: 99.5vh;
+    left: 53.5vw;
 }
