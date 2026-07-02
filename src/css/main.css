@@ -168,44 +168,36 @@ nav {
     max-width: 38vw;
 }
 
-@media (min-width: 2560px) {
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
     .profile {
-        height: 100vh;
-        width: auto;
+        max-width: 100%;
     }
 
     .profile img {
-        width: 100%;
-        height: 100%;
+        height: auto;
     }
 
-    nav {
-        top: 4vh;
+    .profile h1 {
+        top: 50vh;
+        font-size: 1.8rem;
     }
 
-    .scrables-hero {
-        position: absolute;
-        height: 100vh;
-        width: 18vw;
-        top: 0;
-        left: 8vw;
+    .profile-written {
+        padding: 1.8rem;
+        max-width: 90vw;
     }
 
-    .scrables-hero img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media (min-width: 1440px) {
-    .scrables-hero {
-        width: 20vw;
-        top: 0;
+    .profile-written p {
+        max-width: 90vw;
+        text-align: center;
     }
 
-    .scrables-hero img {
-        width: 25.8%;
-        height: 100%;
+    #scrables-hero {
+        display: none;
     }
 }
 
@@ -236,7 +228,6 @@ main {
     border-radius: 40px;
     justify-content: space-evenly;
     background-color: var(--dusty-rose);
-    box-shadow: 8px 8px 15px var(--muted-raspberry);
 }
 
 .icon-bar img {
@@ -272,24 +263,27 @@ main {
     height: auto;
 }
 
-@media (min-width: 2560px) {
+@media (max-width: 768px) {
     .decoration {
         width: 100vw;
-        height: 8vh;
+        height: auto;
     }
 
     .decoration img {
-        width: 100%;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .about-me-written {
+        margin-top: -13vh;
     }
 
     .about-me-written h2 {
-        margin-top: 10vh;
+        font-size: 1.6rem;
     }
-}
 
-@media (min-width: 1440px) {
-    .decoration-bottem {
-        left: -1vw;
+    .about-me-written p {
+        text-align: center;
     }
 }
 
