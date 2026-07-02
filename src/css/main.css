@@ -307,7 +307,6 @@ main {
     }
 }
 
-
 .my-projects h2 {
     margin-bottom: 3vh;
     color: var(--coral-salmon);
@@ -416,34 +415,32 @@ main {
     left: 53.5vw;
 }
 
-@media (min-width: 2560px) {
-
-    #yugenkombucha-left,
-    #yugenkombucha-right {
-        top: 17.8vh;
-        left: 16.8vw;
+@media (max-width: 768px) {
+    .my-projects {
+        margin-top: -5vh;
     }
 
-    #ohdear-left,
-    #ohdear-right {
-        top: 17.8vh;
-        left: 66.8vw;
+    .my-projects h2 {
+        font-size: 1.6rem;
     }
 
-    #dekoninck-left,
-    #dekoninck-right {
-        top: 93.5vh;
-        left: 29.4vw;
+    .left-card,
+    .right-card {
+        display: none;
     }
 
-    #detijdloze-left,
-    #detijdloze-right {
-        top: 93.4vh;
-        left: 54.4vw;
+    .project-card {
+        width: 30vw;
     }
 
-    .decoration-bottem {
-        left: -1vw;
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-card img {
+        width: 65vw;
+        height: 40vh;
     }
 }
 
@@ -522,8 +519,49 @@ footer {
     height: auto;
 }
 
-@media (min-width: 2560px) {
+@media (max-width: 768px) {
+    .footer-top-scrables {
+        top: -35vh;
+    }
+
+    .footer-top-scrables img {
+        max-width: 50vw;
+    }
+
+    footer {
+        position: relative;
+        top: 180vh;
+        height: auto;
+        padding: 2vh 2vw;
+        flex-direction: column;
+    }
+
+    .footer-info h2 {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+        padding-top: 5vh;
+        justify-self: start;
+        padding-left: 1rem;
+    }
+
+    .bold,
+    #email-footer span {
+        font-size: .8rem;
+    }
+
+    .footer-info ul {
+        padding-left: 1rem;
+        width: 80vw;
+    }
+
+    .right-img {
+        position: absolute;
+        width: 22vw;
+        top: 2vh;
+        right: 4vw;
+    }
+
     .footer-scrables {
-        top: 43.8vh;
+        display: none;
     }
 }
