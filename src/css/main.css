@@ -32,7 +32,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--dark);
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -88,6 +88,31 @@ nav {
     border-radius: 40px;
     background-color: var(--muted-raspberry);
     color: var(--rose-mist);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: .8rem;
+    }
+
+    nav {
+        width: 100vw;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        border-radius: 0% 0% 10px 10px;
+        padding: 1vh .5vw;
+        justify-content: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navigation-links a {
+        padding: .6vh 5vw;
+        font-size: .6rem;
+    }
 }
 
 .hero {
