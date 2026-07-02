@@ -561,4 +561,7 @@ footer {
         right: 4vw;
     }
 
+    .footer-scrables {
+        display: none;
+    }
 }
